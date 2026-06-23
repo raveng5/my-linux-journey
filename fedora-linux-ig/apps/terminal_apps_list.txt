@@ -1,0 +1,11 @@
+    Kitty – Your primary terminal emulator.
+
+    Zsh – Your configured shell of choice.
+
+    Starship – The minimalist cross-shell prompt you use to customize your terminal.
+
+    Fuzzel – Your keyboard-driven application launcher and clipboard manager.
+
+    Fastfetch – The system information tool you customized with a unique title and logo.
+
+    nmtui – The text-based user interface tool you use to manage your network and Wi-Fi connections inside window managers.
