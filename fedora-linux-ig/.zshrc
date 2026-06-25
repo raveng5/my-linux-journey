@@ -9,6 +9,7 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
 fastfetch
 alias zed="/home/ig/.local/zed.app/bin/zed"
+alias rezsh="source ~/.zshrc"
 
 # Force upload the entire dotfiles directory exactly as it is right now
 gitup() {
@@ -27,11 +28,14 @@ gitup() {
     echo "done"
 }
 # an shortcut for coping and pasting config files to github
-ctogit() {
+gitcopy() {
     echo "starting"
     rm -r /home/ig/dotfiles/fedora-linux-ig/myconfigs
     mkdir /home/ig/dotfiles/fedora-linux-ig/myconfigs
     cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml,kitty} /home/ig/dotfiles/fedora-linux-ig/myconfigs/
+    echo "-----------------------"
+    rm /home/ig/dotfiles/fedora-linux-ig/.zshrc
+    cp /home/ig/.zshrc /home/ig/dotfiles/fedora-linux-ig/.zshrc
     echo "done"
 
 }
