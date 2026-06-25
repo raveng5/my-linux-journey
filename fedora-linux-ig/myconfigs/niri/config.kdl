@@ -269,7 +269,7 @@ layout {
 // See the binds section below for more spawn examples.
 
 //this line startup the background of my desktop btw in the path u set the path of your background
-spawn-at-startup "swaybg" "-i" "/home/ig/Pictures/wallpapers/wallpaper1.jpg" "-m" "fill"
+spawn-at-startup "swaybg" "-i" "/home/ig/Pictures/wallpapers/wallpaper2.jpg" "-m" "fill"
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 
@@ -347,6 +347,12 @@ window-rule {
 /-window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+}
+//make kitty windows transparent when active
+window-rule {
+    match app-id="kitty"
+    opacity 0.85
+    draw-border-with-background false
 }
 
 binds {
