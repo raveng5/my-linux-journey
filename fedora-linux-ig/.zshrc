@@ -38,9 +38,13 @@ gitcopy() {
     rm -r /home/ig/dotfiles/fedora-linux-ig/myconfigs
     mkdir /home/ig/dotfiles/fedora-linux-ig/myconfigs
     cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml,kitty} /home/ig/dotfiles/fedora-linux-ig/myconfigs/
-    echo "and..."
+    echo "and"
     rm /home/ig/dotfiles/fedora-linux-ig/.zshrc
     cp /home/ig/.zshrc /home/ig/dotfiles/fedora-linux-ig/.zshrc
+    echo ".."
+    rm -r /home/ig/dotfiles/fedora-linux-ig/scripts/practice
+    mkdir /home/ig/dotfiles/fedora-linux-ig/scripts/practice
+    cp -r /home/ig/code/tr /home/ig/dotfiles/fedora-linux-ig/scripts/practice/
     echo "done"
 
 }
