@@ -48,3 +48,5 @@ nmtui – The text-based user interface tool you use to manage your network and 
 Kitty – Your primary terminal emulator.
 
 Zsh – Your configured shell of choice.
+
+java-21-openjdk-devel
