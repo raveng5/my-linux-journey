@@ -48,7 +48,7 @@ gitcopy() {
 #change wallpaper
 wallpaper() {
     if [ -z "$1" ]; then
-        echo "נא לבחור מספר טפט. דוגמה: wallpaper 1"
+        echo "choose a wallpaper number. example: wallpaper 1"
         return 1
     fi
 
