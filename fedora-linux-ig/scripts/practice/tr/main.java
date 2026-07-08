@@ -201,11 +201,60 @@ public class Main {
         return result;
     }
 
+    public static void reverse(Queue<Integer> q) {
+        if (q.isEmpty()) {
+            return;
+        }
+        int x = q.remove();
+        reverse(q);
+        q.add(x);
+    }
+
+    public static boolean isSograim(String s) {
+        if (s.length() % 2 != 0) return false;
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(' || c == '{' || c == '[') {
+                stack.push(c);
+            } else {
+                if (stack.isEmpty()) return false;
+
+                char open = stack.pop();
+
+                if (c == ')' && open != '(') return false;
+                if (c == '}' && open != '{') return false;
+                if (c == ']' && open != '[') return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
+    public static int firstUniqChar(String s) {
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (map.containsKey(c)) {
+                map.put(c, map.get(c) + 1);
+            } else {
+                map.put(c, 1);
+            }
+        }
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (map.get(c) == 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         //HashMap<String, Integer> map = new HashMap<>();
         //int[] arr = { 4, 2, 4, 5, 3, 4, 3, 4, 4, 1, 7, 4, 4 };
         //System.out.println(major(arr));
-        int[] arr2 = { 1, 7, 0, 1, 5, 2 };
+        //int[] arr2 = { 1, 7, 0, 1, 5, 2 };
+        String s = "ggsgssssyuuuylill";
         //-------------------------------
         //Stack<Integer> st = new Stack<>();
         //Queue<Integer> q = new LinkedList<>();
@@ -213,6 +262,9 @@ public class Main {
         //createQueue(q, arr);
         //createStack(st, arr2);
         //System.out.println(food(st, q));
+        //printq(q);
+        //reverse(q);
+        //System.err.println("-------------------------------------");
         //printq(q);
         //printst(st);
         //String s = "hii";
@@ -226,6 +278,8 @@ public class Main {
 
         //System.out.println("Sorted array:");
         //printarr(arr);
-        printarr(tsum(arr2, 9));
+        //printarr(tsum(arr2, 9));
+        //System.out.println(isSograim(s));
+        System.out.println(firstUniqChar(s));
     }
 }
