@@ -5,12 +5,18 @@
 from the internet
 zed- my ide/text editor
 Starship – The minimalist cross-shell prompt you use to customize your terminal.
-
+--------------------------------------------------------------------------------------
 from flatpak:
+
 zen- my browser
 discord- my chat client
+localsend
+
+--------------------------------------------------------------------------------------
 
 from dnf(main repo):
+
+fzf
 gnome clocks
 nautilus- file manager
 gnome calendar
