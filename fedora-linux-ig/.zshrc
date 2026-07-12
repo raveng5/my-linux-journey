@@ -7,7 +7,7 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #some shit for fzf
 source /usr/share/fzf/shell/key-bindings.zsh
-source /usr/share/fzf/shell/completion.zsh
+
 
 # Initialize Starship Prompt
 eval "$(starship init zsh)"
