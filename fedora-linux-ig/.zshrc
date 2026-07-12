@@ -39,7 +39,6 @@ gitcopy() {
     mkdir /home/ig/dotfiles/fedora-linux-ig/myconfigs
     cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml,kitty} /home/ig/dotfiles/fedora-linux-ig/myconfigs/
     echo "."
-    rm /home/ig/dotfiles/fedora-linux-ig/.zshrc
     cp /home/ig/.zshrc /home/ig/dotfiles/fedora-linux-ig/.zshrc
     echo ".."
     rm -r /home/ig/dotfiles/fedora-linux-ig/scripts/practice
