@@ -39,15 +39,15 @@ gitup() {
 # an shortcut for coping and pasting config files to github
 gitcopy() {
     echo "starting"
-    rm -r /home/ig/dotfiles/fedora-linux-ig/myconfigs
-    mkdir /home/ig/dotfiles/fedora-linux-ig/myconfigs
-    cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml,kitty} /home/ig/dotfiles/fedora-linux-ig/myconfigs/
+    rm -r /home/ig/dotfiles/myconfigs
+    mkdir /home/ig/dotfiles/myconfigs
+    cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml,kitty} /home/ig/dotfiles/myconfigs/
     echo "."
-    cp /home/ig/.zshrc /home/ig/dotfiles/fedora-linux-ig/.zshrc
+    cp /home/ig/.zshrc /home/ig/dotfiles/.zshrc
     echo ".."
-    rm -r /home/ig/dotfiles/fedora-linux-ig/scripts/practice
-    mkdir /home/ig/dotfiles/fedora-linux-ig/scripts/practice
-    cp -r /home/ig/code/tr /home/ig/dotfiles/fedora-linux-ig/scripts/practice/
+    rm -r /home/ig/dotfiles/scripts/practice
+    mkdir /home/ig/dotfiles/scripts/practice
+    cp -r /home/ig/code/tr /home/ig/dotfiles/scripts/practice/
     echo "..."
     echo "done"
 
