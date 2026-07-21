@@ -277,6 +277,8 @@ spawn-at-startup "waybar"
 //this line start swaync
 spawn-at-startup "swaync"
 
+//this is for public wifi pops
+spawn-at-startup "/home/USER/.local/bin/captive-portal-observer.sh"
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 

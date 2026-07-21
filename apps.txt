@@ -16,6 +16,8 @@ localsend
 
 from dnf(main repo):
 
+swaync
+epiphany
 fzf
 gnome clocks
 nautilus- file manager
