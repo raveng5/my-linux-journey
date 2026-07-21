@@ -41,7 +41,7 @@ gitcopy() {
     echo "starting"
     rm -r /home/ig/dotfiles/myconfigs
     mkdir /home/ig/dotfiles/myconfigs
-    cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml,kitty} /home/ig/dotfiles/myconfigs/
+    cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml,kitty,swaync} /home/ig/dotfiles/myconfigs/
     echo "."
     cp /home/ig/.zshrc /home/ig/dotfiles/.zshrc
     echo ".."

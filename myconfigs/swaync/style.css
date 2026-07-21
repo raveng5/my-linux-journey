@@ -1,0 +1,88 @@
+* {
+  font-family: "Inter", "Ubuntu", sans-serif;
+  transition: 200ms;
+}
+
+.control-center {
+  background: rgba(30, 30, 46, 0.95); /* Modern dark background */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+/* Title and Clear All button */
+.widget-title {
+  color: #ffffff;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+.widget-title > button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: none;
+}
+.widget-title > button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Do Not Disturb widget */
+.widget-dnd {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+/* Sliders (Volume and Brightness) */
+.widget-volume, .widget-backlight {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+.widget-volume scale, .widget-backlight scale {
+  margin-top: 5px;
+}
+
+/* Quick Settings Buttons Grid */
+.widget-buttons-grid {
+  background: transparent;
+  padding: 10px;
+  margin: 5px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:active {
+  background: #3584e4; /* GNOME Blue active color */
+}
+
+/* Notification list */
+.notification {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin: 10px;
+  padding: 10px;
+  color: #ffffff;
+}

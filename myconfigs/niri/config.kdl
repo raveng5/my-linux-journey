@@ -161,7 +161,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 4
+        width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -169,7 +169,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#7fc8ff"
+        active-color "#fff"
 
         // Color of the ring on inactive monitors.
         //
@@ -273,6 +273,9 @@ layout {
 spawn-at-startup "swaybg" "-i" "/home/ig/Pictures/wallpapers/wallpaper3.jpg" "-m" "fill"
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
+
+//this line start swaync
+spawn-at-startup "swaync"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
