@@ -2,6 +2,10 @@
 
                         some apps that i am using
 --------------------------------------------------------------------------------------
+git:
+
+i use other person sddm theme- Themes/astronaut.conf - https://github.com/Keyitdev/sddm-astronaut-theme.git
+--------------------------------------------------------------------------------------
 from the internet
 zed- my ide/text editor
 Starship – The minimalist cross-shell prompt you use to customize your terminal.
@@ -16,6 +20,7 @@ localsend
 
 from dnf(main repo):
 
+sddm
 swaync
 epiphany
 fzf
